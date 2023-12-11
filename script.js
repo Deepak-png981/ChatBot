@@ -42,7 +42,7 @@ function getResponseFromAPI(message) {
             addMessageToChat('bot', response.content); // Modify as per your response format
         }
     }
-    xhr.open('POST', 'http://52.66.24.111:3030/', true);
+    xhr.open('POST', 'https://chat.0dot1.in:3030/', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({
         supperKey: "IgEuLz!KdWUy~!VX6#hGNN4305)Rey",
