@@ -11,6 +11,7 @@ body {
 }
 
 .chat-box {
+    position: relative;
     height: 400px;
     border: 1px solid #333;
     overflow-y: auto;
@@ -148,4 +149,22 @@ button {
 
 .bot-anim {
     animation: slideIn 0.5s ease-out;
+}
+
+.watermark {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    /* Adjust the opacity to make it more visible */
+    max-width: 150px;
+    /* Increase the size as needed */
+    max-height: 75px;
+    /* Increase the size as needed */
+    z-index: 5;
+    /* Make sure this is below the z-index of the chat messages */
+    font-size: 1em;
+    /* Adjust font size for text watermarks */
+    /* Add more styling here if needed */
 }
